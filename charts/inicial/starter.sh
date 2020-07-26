@@ -1,8 +1,10 @@
 #!/bin/bash
 
+NOMBRE=${NOMBRE:-inicial}
+
 cat > Chart.yaml << EOF
 apiVersion: v2
-name: inicial
+name: ${NOMBRE}
 description: Chart de inicio
 type: application
 version: 0.0.1
